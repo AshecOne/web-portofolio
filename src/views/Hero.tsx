@@ -66,13 +66,19 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                       zIndex: 20,
                     }}
                   >
-                    <Image
-                      src="/foto-profil.png"
-                      alt="Foto Profil"
-                      fill
-                      objectFit="cover"
-                      className="rounded-b-[52%] transition duration-300 transform hover:scale-105"
-                    />
+                    <a
+                      href="https://github.com/AshecOne?tab=repositories"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/foto-profil.png"
+                        alt="Foto Profil"
+                        fill
+                        objectFit="cover"
+                        className="rounded-b-[52%] transition duration-300 transform hover:scale-105 cursor-pointer"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div className="bg-white bg-opacity-50 border border-white rounded-2xl py-4 px-6 shadow-lg absolute -bottom-14 -right-8 w-80 text-center">
@@ -107,14 +113,21 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                   zIndex: 20,
                 }}
               >
-                <Image
-                  src="/foto-profil.png"
-                  alt="Foto Profil"
-                  fill
-                  objectFit="cover"
-                  className="rounded-b-[52%]"
-                />
+                <a
+                  href="https://github.com/AshecOne?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/foto-profil.png"
+                    alt="Foto Profil"
+                    fill
+                    objectFit="cover"
+                    className="rounded-b-[52%] transition duration-300 transform hover:scale-105"
+                  />
+                </a>
               </div>
+
               <div className="bg-white bg-opacity-50 border rounded-2xl py-3 px-4 shadow-lg text-center -mt-10 w-64">
                 <p className="text-blue-500 text-xl font-bold">
                   Trian Verson Tumanan
@@ -125,7 +138,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
               </div>
             </div>
             <div className="h-[32px] mx-4">
-              <p className="text-md text-gray-700 text-center">
+              <p className="text-md font-medium text-gray-700 text-center">
                 A Physics Graduate&apos;s Journey into Creative Coding
               </p>
             </div>
@@ -139,7 +152,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
               />
               <div className="ml-4">
                 <h2 className="text-xl font-semibold">Learn to Code</h2>
-                <p className="text-gray-600 text-sm mt-1">
+                <p className="text-gray-600 font-medium text-sm mt-1">
                   This web is my learning <br /> progress to be a web dev
                 </p>
               </div>
