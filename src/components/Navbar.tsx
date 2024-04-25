@@ -129,7 +129,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                 </li>
                 <li>
                   <Link
-                    href="https://drive.google.com/file/d/1V4qyXfjm6g_8kOeqDAPgTL9IjpT03pJh/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1SyyV07LFV5fr95CsFRd8zdMeSA-vH8Vv/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium text-black hover:text-blue-700 transition duration-300 ease-in-out px-3.5"
@@ -204,7 +204,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     PROFIL
                   </Link>
                   <Link
-                    href="https://drive.google.com/file/d/1V4qyXfjm6g_8kOeqDAPgTL9IjpT03pJh/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1SyyV07LFV5fr95CsFRd8zdMeSA-vH8Vv/view?usp=drive_link"
                     className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
                   >
                     CV
