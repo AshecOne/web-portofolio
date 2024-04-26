@@ -7,10 +7,10 @@ interface IHeroProps {}
 
 const Hero: React.FunctionComponent<IHeroProps> = (props) => {
   return (
-    <div id="hero" className="flex flex-col justify-center h-[620px] md:h-[450px] lg:h-[630px] lg:py-10 md:pt-32">
+    <div id="hero" className="flex flex-col justify-center h-[620px] lg:h-[680px] lg:pt-10 md:h-[450px] xl:h-[630px] xl:py-10 md:pt-32">
       <Container>
-        <div className="lg:block md:hidden hidden">
-          <div className="flex justify-between items-center pt-5">
+        <div className="xl:block lg:hidden md:hidden hidden">
+          <div className="flex justify-between items-center pt-16">
             <div className="flex flex-col justify-center space-y-12 mr-10">
               <div>
                 <h1 className="text-8xl font-bold text-black">
@@ -93,7 +93,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
             </div>
           </div>
         </div>
-        <div className="md:hidden lg:hidden block">
+        <div className="md:hidden lg:hidden block xl:hidden">
           <div className="flex flex-col items-center space-y-8 pt-[80px]">
             <div>
               <h1 className="text-4xl font-bold text-black text-center">
@@ -244,6 +244,90 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                     Trian Verson Tumanan
                   </p>
                   <h5 className="text-gray-700 text-sm font-medium font-poppins">
+                    SouthEast Sulawesi, Kendari
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lg:block xl:hidden md:hidden hidden">
+          <div className="flex justify-between items-center pt-5">
+            <div className="flex flex-col justify-center space-y-12 mr-10">
+              <div>
+                <h1 className="text-7xl font-bold text-black">
+                  Hello, Econ is here
+                </h1>
+                <p className="text-2xl text-gray-700 mt-6">
+                  A Physics Graduate&apos;s Journey into Creative Coding
+                </p>
+                <div className="mt-8">
+                  <Link
+                    href="https://wa.me/6285156720292?text=Hello%2C%20Can%20I%20ask%20you%20?
+                  "
+                    target="_blank"
+                    className="inline-block bg-blue-500 text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                  >
+                    Contact
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center pt-5">
+                <div className="w-1/2">
+                  <Image
+                    src="/learning-coding.webp"
+                    alt="Learning"
+                    width={250}
+                    height={200}
+                    className="rounded-full shadow-lg"
+                  />
+                </div>
+                <div className="w-1/2">
+                  <h2 className="text-3xl font-semibold">Learn to Code</h2>
+                  <p className="text-gray-600 text-lg mt-2">
+                    This web is my learning <br /> progress to be a web dev
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center ml-10">
+              <div className="relative">
+                <div className="relative">
+                  <div className="w-64 h-80 border-2 border-blue-300 rounded-full shadow-md"></div>
+                  <div
+                    className="w-[229px] h-72 rounded-t-[50%] rounded-b-[52%] shadow-lg bg-gradient-to-br from-indigo-500 to-blue-700 absolute"
+                    style={{ top: "18px", left: "14px" }}
+                  ></div>
+                  <div
+                    className="absolute"
+                    style={{
+                      top: "-80px",
+                      left: "11px",
+                      width: "calc(92%)",
+                      height: "calc(120%)",
+                      zIndex: 20,
+                    }}
+                  >
+                    <a
+                      href="https://github.com/AshecOne?tab=repositories"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/foto-profil.png"
+                        alt="Foto Profil"
+                        fill
+                        objectFit="cover"
+                        className="rounded-b-[52%] transition duration-300 transform hover:scale-105 cursor-pointer"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="bg-white bg-opacity-50 border border-white rounded-2xl py-4 px-6 shadow-lg absolute -bottom-14 -right-8 w-80 text-center">
+                  <p className="text-blue-500 text-2xl font-bold">
+                    Trian Verson Tumanan
+                  </p>
+                  <h5 className="text-gray-700 text-lg font-medium font-poppins">
                     SouthEast Sulawesi, Kendari
                   </h5>
                 </div>

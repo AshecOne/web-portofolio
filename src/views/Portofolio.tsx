@@ -12,6 +12,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
   return (
     <div className="py-16">
       <Container>
+      <h1 className="text-4xl md:text-5xl font-bold my-5 xl:my-14 text-center">Wanna Play?</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex flex-col items-center justify-center h-full p-4">
@@ -29,7 +30,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 Prompt Alert command of Rock Paper Scissors against computer.
               </p>
               <button
-                className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-2 px-6 lg:py-2 lg:px-6 md:py-4 md:px-10 md:text-xl lg:text-lg rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
                 onClick={suitGame}
               >
                 Try!
@@ -52,7 +53,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 Prompt Alert command of Two Players shoot each other.
               </p>
               <button
-                className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-2 px-6 lg:py-2 lg:px-6 md:py-4 md:px-10 md:text-xl lg:text-lg rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
                 onClick={shootingGame}
               >
                 Try!
@@ -77,7 +78,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               store.
             </p>
             <button
-              className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+              className="bg-blue-500 text-white font-bold py-2 px-6 lg:py-2 lg:px-6 md:py-4 md:px-10 md:text-xl lg:text-lg rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               onClick={bukaToko}
             >
               Try!
@@ -85,7 +86,8 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
           </div>
         </div>
         <div>
-          <div id="portofolio" className="flex flex-col items-center justify-center h-full p-4 mb-10">
+          <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
+          <h1 id="portofolio" className="text-4xl md:text-5xl font-bold my-5 text-center">My Web Project</h1>
             <div className="flex flex-col md:flex-row items-center justify-center mb-8">
               <div className="mb-4 mr-0 md:mb-0 md:mr-8">
                 <Image
@@ -131,7 +133,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://web-lawyer.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 lg:py-4 lg:px-6 lg:text-lg md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -176,7 +178,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://ashecone.github.io/expense-tracker/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 lg:py-4 lg:px-6 lg:text-lg md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -244,7 +246,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://sayurmoms.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl lg:py-4 lg:px-6 lg:text-lg rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -301,7 +303,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://grocery-vite.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl lg:py-4 lg:px-6 lg:text-lg rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
