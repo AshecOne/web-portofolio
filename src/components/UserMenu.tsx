@@ -15,12 +15,12 @@ const UserMenu: React.FC<IUserMenuProps> = ({ onClose, onLogout }) => {
 
   const handleLogoutClick = () => {
     onLogout();
-    onClose();  // Ensure this also hides the UserMenu itself
+    onClose(); 
   };
 
   return (
     <>
-      <div className="absolute top-full right-0 mt-2 w-24 bg-white rounded-md shadow-lg z-10">
+      <div className="absolute top-full md:right-10 lg:right-14 md:-mt-5 lg:-mt-4 md:w-[100px] bg-white rounded-md shadow-lg z-10">
         <button
           className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
           onClick={handleSettingsClick}
@@ -38,7 +38,7 @@ const UserMenu: React.FC<IUserMenuProps> = ({ onClose, onLogout }) => {
         <SettingModal
           onClose={() => {
             setShowSettingModal(false);
-            onClose(); // Close the UserMenu when the setting is changed
+            onClose();
           }}
         />
       )}

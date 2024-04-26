@@ -10,7 +10,7 @@ interface IPortofolioProps {}
 
 const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
   return (
-    <div id="portofolio" className="py-16">
+    <div className="py-16">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
@@ -25,11 +25,11 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 />
               </div>
               <h1 className="text-2xl font-bold mb-2">Suit Game</h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4">
+              <p className="text-center text-md font-medium md:text-xl lg:text-lg mb-4">
                 Prompt Alert command of Rock Paper Scissors against computer.
               </p>
               <button
-                className="bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
                 onClick={suitGame}
               >
                 Try!
@@ -48,11 +48,11 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 />
               </div>
               <h1 className="text-2xl font-bold mb-2">Shooting Game</h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4">
+              <p className="text-center text-md md:text-xl font-medium lg:text-lg mb-4">
                 Prompt Alert command of Two Players shoot each other.
               </p>
               <button
-                className="bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
                 onClick={shootingGame}
               >
                 Try!
@@ -72,12 +72,12 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               />
             </div>
             <h1 className="text-2xl font-bold mb-2">Toko Kelontong</h1>
-            <p className="text-center text-md font-medium lg:text-lg mb-4">
+            <p className="text-center text-md font-medium md:text-xl lg:text-lg mb-4">
               Prompt Alert command of e-commerce. Login as Admin to manage
               store.
             </p>
             <button
-              className="bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+              className="bg-blue-500 text-white font-bold py-2 px-6 md:py-4 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               onClick={bukaToko}
             >
               Try!
@@ -85,7 +85,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
+          <div id="portofolio" className="flex flex-col items-center justify-center h-full p-4 mb-10">
             <div className="flex flex-col md:flex-row items-center justify-center mb-8">
               <div className="mb-4 mr-0 md:mb-0 md:mr-8">
                 <Image
@@ -114,7 +114,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               <h1 className="text-center text-2xl font-bold mb-2">
                 Company Profile Landing Page
               </h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4">
+              <p className="text-center text-md font-medium md:text-xl md:px-8  lg:text-lg mb-4">
                 Code challenge of Purwadhika&apos;s front end module for making
                 a company profile website. The design can be found{" "}
                 <a
@@ -131,7 +131,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://web-lawyer.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -157,7 +157,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               <h1 className="text-center text-2xl font-bold mb-2">
                 Money Tracker App
               </h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4 lg:px-32">
+              <p className="text-center text-md font-medium md:text-xl md:px-8  lg:text-lg mb-4 lg:px-32">
                 This application can track your financial transactions and
                 allows you to search through stored transaction records. It is
                 built using Next.js for the frontend and MySQL for the database,
@@ -176,7 +176,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://ashecone.github.io/expense-tracker/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -213,7 +213,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               <h1 className="text-center text-2xl font-bold mb-2">
                 Sayurmoms Landing Page
               </h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4 lg:px-32">
+              <p className="text-center text-md font-medium md:text-xl md:px-8  lg:text-lg mb-4 lg:px-32">
                 This landing page was created by a team of three: myself, Putu,
                 and Ronald, as part of a group assignment at Purwadhika
                 Surabaya.{" "}
@@ -244,7 +244,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://sayurmoms.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>
@@ -281,7 +281,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               <h1 className="text-center text-2xl font-bold mb-2">
                 Prototype Landing Page
               </h1>
-              <p className="text-center text-md font-medium lg:text-lg mb-4 lg:px-32">
+              <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
                 Before creating the Sayurmoms landing page, we developed a
                 prototype using the React library Vite. My
                 primary contributions included designing sections and ensuring
@@ -301,7 +301,7 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 href="https://grocery-vite.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-4 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+                className="bg-blue-500 text-white font-bold py-4 px-6 md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
               >
                 Check it Out!
               </a>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateUser } from '@/lib/features/userSlice';
+import { toast } from 'react-toastify';
 
 interface ISettingModalProps {
   onClose: () => void;
@@ -17,6 +18,7 @@ const SettingModal: React.FC<ISettingModalProps> = ({ onClose }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(updateUser({ name })); 
+    toast.success(`Updated successfully to ${name}!`);
     onClose();
   };
 

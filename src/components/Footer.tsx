@@ -21,7 +21,7 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
               AshecOne
             </p>
           </div>
-          <p className="font-inherit text-sm text-black mt-1 mb-3">
+          <p className="font-inherit text-sm md:text-lg text-black mt-1 mb-3">
             &copy; 2024 Seorang Pelajar Sejati
           </p>
         </div>

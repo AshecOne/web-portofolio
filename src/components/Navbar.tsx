@@ -10,6 +10,8 @@ import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import ClipLoader from "react-spinners/ClipLoader";
 import { setUser, logout } from "@/lib/features/userSlice";
 import SettingModal from "./SettingModal";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface INavbarProps {}
 
@@ -48,13 +50,15 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
     dispatch(setUser({ name, isLoggedIn: true }));
     handleModalClose();
     setIsMobileMenuOpen(false);
+    toast.success(`Welcome, ${name}!`);
   };
 
   const handleLogoutClick = () => {
     dispatch(logout());
-    handleModalClose(); 
+    handleModalClose();
     handleUserMenuToggle();
     setIsMobileMenuOpen(false);
+    toast.success(`Goodbye, ${userName}!`);
   };
 
   const handleMobileMenuToggle = () => {
@@ -66,7 +70,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   return (
     <nav className="bg-blue-100 bg-opacity-50 fixed top-0 left-0 w-full z-50">
       <Container>
-        <div className="flex items-center justify-between py-2 px-5 md:py-4 md:px-10">
+        <div className="flex items-center md:text-lg justify-between py-2 px-5 md:py-4 md:px-10">
           {isLoading ? (
             <div className="flex items-center justify-center w-full">
               <ClipLoader color="#000000" loading={isLoading} size={20} />
@@ -176,7 +180,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               </button>
               {userName && (
                 <div
-                  className="md:hidden text-lg font-medium underline"
+                  className="md:hidden text-lg font-semibold underline"
                   onClick={handleMobileMenuToggle}
                 >
                   Hi, {userName}
@@ -186,7 +190,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                 <div className="md:hidden absolute bg-blue-100 bg-opacity-50 w-full left-0 top-full z-10 flex flex-col justify-center items-center">
                   <Link
                     href="#portofolio"
-                    className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                    className="text-black font-bold hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out"
                     onClick={(e) => {
                       e.preventDefault();
                       const section = document.getElementById("portofolio");
@@ -199,13 +203,13 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                   </Link>
                   <Link
                     href="https://www.linkedin.com/in/trian-verson-tumanan-49a1221a4/"
-                    className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                    className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-bold"
                   >
                     PROFIL
                   </Link>
                   <Link
                     href="https://drive.google.com/file/d/1SyyV07LFV5fr95CsFRd8zdMeSA-vH8Vv/view?usp=drive_link"
-                    className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                    className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-bold"
                   >
                     CV
                   </Link>
@@ -213,13 +217,13 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     <>
                       <button
                         onClick={handleSettingsClick}
-                        className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                        className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-bold"
                       >
                         SETTING
                       </button>
                       <button
                         onClick={handleLogoutClick}
-                        className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                        className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-bold"
                       >
                         LOG OUT
                       </button>
@@ -228,7 +232,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                   {!userName && (
                     <button
                       onClick={handleLoginClick}
-                      className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-medium"
+                      className="text-black hover:text-blue-700 px-3.5 py-2 transition duration-300 ease-in-out font-bold"
                     >
                       LOG IN
                     </button>
@@ -245,6 +249,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
       {isModalOpen && (
         <LoginModal onClose={handleModalClose} onLogin={handleUserLogin} />
       )}
+      <ToastContainer position="top-center"/>
     </nav>
   );
 };
