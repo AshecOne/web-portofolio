@@ -178,21 +178,25 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
                 Web App Blog
               </h1>
               <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
-                This application allows users to create and manage blogs based
-                on predefined categories. Built with Next.js, React, and Redux
-                for the frontend, and utilizing MySQL, Prisma ORM, and
-                Express.js for the backend, this web app offers a seamless and
-                efficient blogging experience. Check out the repository on my{" "}
-                <a
-                  href="https://github.com/AshecOne/web-blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition duration-300 ease-in-out underline text-black hover:text-blue-700"
-                >
-                  github
-                </a>
-                .
-              </p>
+        This application allows users to create and manage blogs based on predefined categories. Built with Next.js, React, and Redux for the frontend, and utilizing MySQL, Prisma ORM, and Express.js for the backend, this web app offers a seamless and efficient blogging experience. The design inspiration is taken from a Figma community file, which can be found 
+        <a
+          href="https://www.figma.com/community/file/1185112138001406562/blogging-website-ui-community"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition duration-300 ease-in-out underline text-black hover:text-blue-700"
+        >
+          here
+        </a>. Check out the repository on my{" "}
+        <a
+          href="https://github.com/AshecOne/web-blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition duration-300 ease-in-out underline text-black hover:text-blue-700"
+        >
+          github
+        </a>
+        .
+      </p>
               <a
                 href="https://ashecone.github.io/web-blog/"
                 target="_blank"
