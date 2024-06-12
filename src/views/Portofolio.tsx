@@ -12,7 +12,9 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
   return (
     <div className="py-16">
       <Container>
-      <h1 className="text-4xl md:text-5xl font-bold my-5 xl:my-14 text-center">Wanna Play?</h1>
+        <h1 className="text-4xl md:text-5xl font-bold my-5 xl:my-14 text-center">
+          Wanna Play?
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <div className="flex flex-col items-center justify-center h-full p-4">
@@ -87,7 +89,12 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
         </div>
         <div>
           <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
-          <h1 id="portofolio" className="text-4xl md:text-5xl font-bold my-5 text-center">My Web Project</h1>
+            <h1
+              id="portofolio"
+              className="text-4xl md:text-5xl font-bold my-5 text-center"
+            >
+              My Web Project
+            </h1>
             <div className="flex flex-col md:flex-row items-center justify-center mb-8">
               <div className="mb-4 mr-0 md:mb-0 md:mr-8">
                 <Image
@@ -140,6 +147,64 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
             </div>
           </div>
         </div>
+        <div>
+          <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
+            <div className="flex flex-col md:flex-row items-center justify-center mb-8">
+              <div className="mb-4 mr-0 md:mb-0 md:mr-8">
+                <Image
+                  src="/web-blog-desktop.png"
+                  alt="Web Blog Desktop"
+                  width={3481}
+                  height={1938}
+                  layout="responsive"
+                  quality={100}
+                  className="hidden md:block"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/web-blog-mobile.png"
+                  alt="Web Blog Mobile"
+                  width={242}
+                  height={445}
+                  layout="intrinsic"
+                  quality={100}
+                  className="pl-2 md:pl-0 md:hidden"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="text-center text-2xl font-bold mb-2">
+                Web App Blog
+              </h1>
+              <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
+                This application allows users to create and manage blogs based
+                on predefined categories. Built with Next.js, React, and Redux
+                for the frontend, and utilizing MySQL, Prisma ORM, and
+                Express.js for the backend, this web app offers a seamless and
+                efficient blogging experience. Check out the repository on my{" "}
+                <a
+                  href="https://github.com/AshecOne/web-blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition duration-300 ease-in-out underline text-black hover:text-blue-700"
+                >
+                  github
+                </a>
+                .
+              </p>
+              <a
+                href="https://ashecone.github.io/web-blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 text-white font-bold py-4 px-6 lg:py-4 lg:px-6 lg:text-lg md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+              >
+                Check it Out!
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div>
           <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
             <div className="flex flex-col md:flex-row items-center justify-center mb-8">
@@ -285,10 +350,10 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
               </h1>
               <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
                 Before creating the Sayurmoms landing page, we developed a
-                prototype using the React library Vite. My
-                primary contributions included designing sections and ensuring
-                mobile responsiveness. Specifically, I worked on the promo card,
-                about us, and footer sections. The repo is{" "}
+                prototype using the React library Vite. My primary contributions
+                included designing sections and ensuring mobile responsiveness.
+                Specifically, I worked on the promo card, about us, and footer
+                sections. The repo is{" "}
                 <a
                   href="https://github.com/thujuli/grocery_vite"
                   target="_blank"
