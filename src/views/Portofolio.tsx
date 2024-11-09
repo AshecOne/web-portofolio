@@ -95,6 +95,60 @@ const Portofolio: React.FunctionComponent<IPortofolioProps> = (props) => {
             >
               My Web Project
             </h1>
+            <div>
+          <div className="flex flex-col items-center justify-center h-full p-4 mb-10">
+            <div className="flex flex-col md:flex-row items-center justify-center mb-8">
+              <div className="mb-4 mr-0 md:mb-0 md:mr-8">
+                <Image
+                  src="/fachri-chess.png"
+                  alt="Chess Game"
+                  width={3481}
+                  height={1938}
+                  layout="responsive"
+                  quality={100}
+                  className="hidden md:block"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/fachri-chess-mobile.png"
+                  alt="Chess Game Mobile"
+                  width={242}
+                  height={445}
+                  layout="intrinsic"
+                  quality={100}
+                  className="pl-2 md:pl-0 md:hidden"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="text-center text-2xl font-bold mb-2">
+                Chess Game with Fachri
+              </h1>
+              <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
+  Play chess against an AI trained with a 2000 ELO-rated dataset from 2019 using PyTorch. This game includes an interactive chat feature, providing a challenging experience in memory of our friend Fachri, whose passion for chess inspires us. For more, see the{" "}
+  <a
+    href="https://github.com/AshecOne/fachri-chess"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition duration-300 ease-in-out underline text-black hover:text-blue-700"
+  >
+    GitHub
+  </a>
+  .
+</p>
+
+              <a
+                href="https://ashecone.github.io/fachri-chess/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 text-white font-bold py-4 px-6 lg:py-4 lg:px-6 lg:text-lg md:py-6 md:px-10 md:text-xl rounded-full shadow-md transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-110"
+              >
+                Check it Out!
+              </a>
+            </div>
+          </div>
+        </div>
             <div className="flex flex-col md:flex-row items-center justify-center mb-8">
               <div className="mb-4 mr-0 md:mb-0 md:mr-8">
                 <Image
