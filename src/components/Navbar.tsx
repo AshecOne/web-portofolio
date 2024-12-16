@@ -133,7 +133,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                 </li>
                 <li>
                   <Link
-                    href="https://drive.google.com/file/d/1SyyV07LFV5fr95CsFRd8zdMeSA-vH8Vv/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1tsqXDIUERM-qwL5p3x3OoNP0sNKQKiA_/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium text-black hover:text-blue-700 transition duration-300 ease-in-out px-3.5"
@@ -249,7 +249,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
       {isModalOpen && (
         <LoginModal onClose={handleModalClose} onLogin={handleUserLogin} />
       )}
-      <ToastContainer position="top-center"/>
+      <ToastContainer position="top-center" />
     </nav>
   );
 };
