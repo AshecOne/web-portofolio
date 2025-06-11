@@ -1,48 +1,42 @@
-import React, { useState } from "react";
-import SettingModal from "./SettingModal";
+import React from "react";
 
 interface IUserMenuProps {
-  onClose: () => void;  // This will now also close the UserMenu
+  onClose: () => void;
   onLogout: () => void;
+  onSettings: () => void; // New prop for settings
 }
 
-const UserMenu: React.FC<IUserMenuProps> = ({ onClose, onLogout }) => {
-  const [showSettingModal, setShowSettingModal] = useState(false);
-
+const UserMenu: React.FC<IUserMenuProps> = ({
+  onClose,
+  onLogout,
+  onSettings,
+}) => {
   const handleSettingsClick = () => {
-    setShowSettingModal(true);
+    onSettings(); // Call parent's settings handler
+    onClose(); // Close the dropdown
   };
 
   const handleLogoutClick = () => {
     onLogout();
-    onClose(); 
+    onClose();
   };
 
   return (
-    <>
-      <div className="absolute top-full md:right-10 lg:right-14 md:-mt-5 lg:-mt-4 md:w-[100px] bg-white rounded-md shadow-lg z-10">
-        <button
-          className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
-          onClick={handleSettingsClick}
-        >
-          Setting
-        </button>
-        <button
-          className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
-          onClick={handleLogoutClick}
-        >
-          Log Out
-        </button>
-      </div>
-      {showSettingModal && (
-        <SettingModal
-          onClose={() => {
-            setShowSettingModal(false);
-            onClose();
-          }}
-        />
-      )}
-    </>
+    <div className="absolute top-full right-0 mt-2 w-32 bg-white rounded-lg shadow-xl border border-gray-100 z-50 overflow-hidden">
+      <button
+        className="w-full text-left px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium text-sm"
+        onClick={handleSettingsClick}
+      >
+        Settings
+      </button>
+      <hr className="border-gray-100" />
+      <button
+        className="w-full text-left px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors duration-200 font-medium text-sm"
+        onClick={handleLogoutClick}
+      >
+        Log Out
+      </button>
+    </div>
   );
 };
 

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { updateUser } from '@/lib/features/userSlice';
-import { toast } from 'react-toastify';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { updateUser } from "@/lib/features/userSlice";
+import { toast } from "react-toastify";
 
 interface ISettingModalProps {
   onClose: () => void;
 }
 
 const SettingModal: React.FC<ISettingModalProps> = ({ onClose }) => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
   const dispatch = useDispatch();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,13 +17,13 @@ const SettingModal: React.FC<ISettingModalProps> = ({ onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(updateUser({ name })); 
+    dispatch(updateUser({ name }));
     toast.success(`Updated successfully to ${name}!`);
     onClose();
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 flex items-center justify-center z-[60]">
       <div className="bg-white rounded-md shadow-lg p-6">
         <h2 className="text-xl font-bold mb-4">Change Your Name</h2>
         <form onSubmit={handleSubmit}>
