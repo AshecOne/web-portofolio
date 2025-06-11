@@ -83,7 +83,7 @@ const StartupProjects: React.FunctionComponent<IStartupProjectsProps> = (
               </div>
 
               <h1 className="text-center text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                Mine.Lite - Mining Visualization SaaS
+                mine.lite - Mining Visualization SaaS
               </h1>
 
               <div className="text-center text-md font-medium md:text-xl lg:text-lg mb-6 lg:px-16 text-gray-700 leading-relaxed">
@@ -94,7 +94,7 @@ const StartupProjects: React.FunctionComponent<IStartupProjectsProps> = (
                   <strong>
                     Co-Founder of PT Insinyur Software Handal - Tiang Bendera
                   </strong>
-                  , I'm leading the development of this innovative solution.
+                  , My team and I are leading the development of this innovative solution.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4 text-left bg-white bg-opacity-80 backdrop-blur-sm rounded-lg p-6 shadow-md border border-gray-100">
@@ -124,8 +124,8 @@ const StartupProjects: React.FunctionComponent<IStartupProjectsProps> = (
                 </div>
 
                 <p className="mt-4 text-gray-600 italic">
-                  "Transforming how mining professionals visualize and analyze
-                  geological data through cutting-edge mobile technology."
+                &ldquo;Transforming how mining professionals visualize and analyze
+                  geological data through cutting-edge mobile technology.&rdquo;
                 </p>
               </div>
 
