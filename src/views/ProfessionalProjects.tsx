@@ -92,14 +92,16 @@ const ProfessionalProjects: React.FunctionComponent<
                 Pupuk Kaltim Monitoring & Classification System
               </h1>
               <p className="text-center text-md font-medium md:text-xl md:px-8 lg:text-lg mb-4 lg:px-32">
-                An advanced fertilizer monitoring and classification system
-                developed at Widya Robotics. This project involved reproducing
-                and enhancing the original design previously developed by
-                AISeeYou vendor. I completely redesigned the entire user
-                interface and customized features to precisely match client
-                requirements, ensuring optimal performance and user experience
-                for fertilizer production monitoring and quality classification
-                processes.
+                A streamlined fertilizer production monitoring and
+                classification system developed at Widya Robotics. This project
+                features AI-powered product classification through integrated
+                camera systems, automated quality assessment, real-time
+                production monitoring, and comprehensive reporting dashboards.
+                Built with a simplified yet effective approach, the system
+                provides essential monitoring capabilities with an intuitive
+                user interface redesigned from the ground up to meet specific
+                operational requirements in fertilizer manufacturing
+                environments.
               </p>
             </div>
           </div>
