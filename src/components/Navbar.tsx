@@ -263,7 +263,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                   </li>
                   <li>
                     <Link
-                      href="https://drive.google.com/file/d/1ZWG3-4QNjPMpg5E7d5Kb0DOeqArn84hf/view?usp=sharing"
+                      href="https://drive.google.com/file/d/12qYC7xkBRhLw7LhbfYZLMgiv9sFL0YxW/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-medium text-black hover:text-blue-700 transition duration-300 ease-in-out px-3.5"
@@ -424,7 +424,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             </MobileMenuItem>
             
             <MobileMenuItem
-              href="https://drive.google.com/file/d/1ZWG3-4QNjPMpg5E7d5Kb0DOeqArn84hf/view?usp=sharing"
+              href="https://drive.google.com/file/d/12qYC7xkBRhLw7LhbfYZLMgiv9sFL0YxW/view?usp=sharing"
               external
             >
               CV
