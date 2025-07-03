@@ -92,7 +92,7 @@ const StartupProjects: React.FunctionComponent<IStartupProjectsProps> = (
                   revolutionizing the mining industry through advanced
                   geological data visualization. As{" "}
                   <strong>
-                    Co-Founder of PT Insinyur Software Handal - Tiang Bendera
+                    Co-Founder and Head of AI & Data Science Department of PT Softroc Teknologi Indonesia
                   </strong>
                   , My team and I are leading the development of this innovative solution.
                 </p>
