@@ -82,9 +82,18 @@ const StartupProjects: React.FunctionComponent<IStartupProjectsProps> = (
                 </div>
               </div>
 
-              <h1 className="text-center text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                mine.lite - Mining Visualization SaaS
-              </h1>
+              <div className="flex flex-col items-center mb-4">
+                <Image
+                  src="/mine.lite_logo.png"
+                  alt="mine.lite logo"
+                  width={200}
+                  height={80}
+                  className="mb-2"
+                />
+                <h1 className="text-center text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  Mining Visualization SaaS
+                </h1>
+              </div>
 
               <div className="text-center text-md font-medium md:text-xl lg:text-lg mb-6 lg:px-16 text-gray-700 leading-relaxed">
                 <p className="mb-4">
