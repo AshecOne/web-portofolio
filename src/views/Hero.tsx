@@ -73,7 +73,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                     }}
                   >
                     <a
-                      href="https://github.com/AshecOne?tab=repositories"
+                      href="https://github.com/AshecOne"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full h-full group"
@@ -123,7 +123,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                 }}
               >
                 <a
-                  href="https://github.com/AshecOne?tab=repositories"
+                  href="https://github.com/AshecOne"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full h-full"
@@ -243,7 +243,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                     }}
                   >
                     <a
-                      href="https://github.com/AshecOne?tab=repositories"
+                      href="https://github.com/AshecOne"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full h-full group"
@@ -332,7 +332,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                     }}
                   >
                     <a
-                      href="https://github.com/AshecOne?tab=repositories"
+                      href="https://github.com/AshecOne"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full h-full group"
