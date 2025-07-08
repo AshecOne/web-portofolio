@@ -48,6 +48,10 @@ const TechStack: React.FunctionComponent<ITechStackProps> = (props) => {
           name: "React Native",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
+        {
+          name: "Flutter",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+        },
         { name: "Expo", icon: "🚀" },
       ],
     },
@@ -68,6 +72,10 @@ const TechStack: React.FunctionComponent<ITechStackProps> = (props) => {
         {
           name: "NestJS",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+        },
+        {
+          name: "Go",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
         },
         {
           name: "Python",
@@ -370,7 +378,7 @@ const TechStack: React.FunctionComponent<ITechStackProps> = (props) => {
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-3">🤖</div>
-                <h4 className="font-semibold text-gray-700 mb-2">
+                <h4 className="font-semibent text-gray-700 mb-2">
                   IoT & Hardware
                 </h4>
                 <p className="text-sm text-gray-600">
